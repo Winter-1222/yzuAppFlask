@@ -18,5 +18,6 @@ def create_app():
 
 
 from Program.resource import UserResource
+from Program.resource import SuggestionResource
 from Program.models import user
 from Program.models import suggestion

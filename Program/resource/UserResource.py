@@ -8,7 +8,7 @@ from Program.common.R import Res
 from Program.common.extends import api
 from Program.service.userService import userService
 
-
+# 登录接口
 class LoginResource(Resource):
     def post(self):
         data = request.json
