@@ -9,8 +9,7 @@ def create_app():
     # 设置唯一密钥
     app.secret_key = 'yzu_wxapp'
     # 配置mysql数据库
-    # db_uri = 'mysql+pymysql://root:123456@localhost:3306/yzu_wxapp'
-    db_uri = 'mysql+pymysql://WinterDD:021217dong@WinterDD.mysql.pythonanywhere-services.com:3306/yzu_wxapp'
+    db_uri = 'mysql+pymysql://root:123456@localhost:3306/yzu_wxapp'
     app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     # 初始化插件
@@ -19,3 +18,5 @@ def create_app():
 
 
 from Program.resource import UserResource
+from Program.models import user
+from Program.models import suggestion
